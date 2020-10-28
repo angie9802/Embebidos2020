@@ -1,5 +1,7 @@
 {
   "name": "BreakAndMove",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
