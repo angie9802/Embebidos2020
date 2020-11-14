@@ -1,17 +1,50 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-item>
+      <ion-title>Configuración</ion-title>
+      <ion-button fill="outline" slot="end">Editar</ion-button>
+    </ion-item>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-list>
+    <ion-list-header>Datos de usuario</ion-list-header>
+    <ion-item>
+      <ion-label>Nombre</ion-label>
+      <ion-badge slot="end">Juan Perez</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Altura</ion-label>
+      <ion-badge color="secondary" slot="end">1.72 metros</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Peso</ion-label>
+      <ion-badge color="tertiary" slot="end">60 kg</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Objetivo</ion-label>
+      <ion-badge color="success" slot="end">Aumentar masa muscular</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Entrenador</ion-label>
+      <ion-badge color="warning" slot="end">Lucy Fernanda</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Días</ion-label>
+      <ion-badge color="danger" slot="end">De lunes a viernes</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Horario</ion-label>
+      <ion-badge color="light" slot="end">16:00-18:00</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Calorías/día</ion-label>
+      <ion-badge color="medium" slot="end">50 KCAL</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tiempo acumulado</ion-label>
+      <ion-badge color="dark" slot="end">35 días</ion-badge>
+    </ion-item>
+  </ion-list>
 </ion-content>
