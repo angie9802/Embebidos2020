@@ -74,6 +74,11 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  
+  --theme-color: #ed576b;
+  --theme-black: #000000;
+  --ion-color-gray: #d7d8da;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -228,5 +233,85 @@
     --ion-tab-bar-background: #1f1f1f;
 
     --ion-card-background: #1e1e1e;
+  }
+}
+//font 
+@font-face {
+  font-family: 'Montserrat-Black';
+  src: url('../assets/fonts/Montserrat/Montserrat-Black.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-BlackItalic';
+  src: url('../assets/fonts/Montserrat/Montserrat-BlackItalic.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../assets/fonts/Montserrat/Montserrat-Bold.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-BoldItalic';
+  src: url('../assets/fonts/Montserrat/Montserrat-BoldItalic.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  src: url('../assets/fonts/Montserrat/Montserrat-ExtraBold.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-ExtraBoldItalic';
+  src: url('../assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-ExtraLight';
+  src: url('../assets/fonts/Montserrat/Montserrat-ExtraLight.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('../assets/fonts/Montserrat/Montserrat-Light.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../assets/fonts/Montserrat/Montserrat-Medium.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../assets/fonts/Montserrat/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('../assets/fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Thin';
+  src: url('../assets/fonts/Montserrat/Montserrat-Thin.ttf');
+}
+
+@media (min-height:319px ){
+  .center{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-49%, -49%);
+    transform: translate(-49%, -49%);
+    width: 90%;
+  }
+}
+@media (min-height:735px ){
+  .center{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-49%, -49%);
+    transform: translate(-49%, -49%);
+    width: 90%;
+  }
+}
+@media (min-height:812px ){
+  .center{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-49%, -49%);
+    transform: translate(-49%, -49%);
+    width: 90%;
   }
 }

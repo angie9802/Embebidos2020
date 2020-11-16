@@ -1,9 +1,38 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
+  <div class="login-header ion-padding">
+    <img  class="logo-img"  src="assets/icon/corazon.png">
+  </div>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+
+  <div class="center">
+      <div linespace></div><div linespace></div>
+      <div heading-column-lr>
+          <h1 big-heading>Iniciar sesión</h1>
+          
+      </div>
+    
+      <ion-label small-heading>
+        ¡comienza ahora!
+      </ion-label>
+      <div linespace></div>
+      <ion-item transparent>
+        <img  icon-small  src="assets/icon/usuario.png" >
+        <ion-input [(ngModel)]="Email" placeholder="Nombre de usuario" type="text"></ion-input>
+      </ion-item>
+      <ion-item transparent>
+        <img  icon-small  src="assets/icon/candado.png" >
+        <ion-input [(ngModel)]="Clave" placeholder="Clave" type="clave"></ion-input>
+      </ion-item>
+      <ion-label class="forget-password">¿Olvidaste tu clave?</ion-label>
+
+      <div linespace></div>
+      <ion-button color="primary" class="ion-button-class" shape="round" fill="solid" size="large" expand="block"
+      (click)="LoginDTP()">Ingresar</ion-button>
+      <ion-label class="ion-text-center">¿No tienes una cuenta? <span class="link-button" (click)="Register()">Regístrate</span>
+      </ion-label>
+
+  </div>
 
 </ion-content>
