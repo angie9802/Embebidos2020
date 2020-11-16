@@ -25,10 +25,11 @@
         <img  icon-small  src="assets/icon/candado.png" >
         <ion-input [(ngModel)]="Clave" placeholder="Clave" type="clave"></ion-input>
       </ion-item>
+      
       <ion-label class="forget-password">¿Olvidaste tu clave?</ion-label>
 
       <div linespace></div>
-      <ion-button color="primary" class="ion-button-class" shape="round" fill="solid" size="large" expand="block"
+      <ion-button padding color = "danger" class="ion-button-class" shape="round" fill="solid" size="large" expand="block"
       (click)="LoginDTP()">Ingresar</ion-button>
       <ion-label class="ion-text-center">¿No tienes una cuenta? <span class="link-button" (click)="Register()">Regístrate</span>
       </ion-label>

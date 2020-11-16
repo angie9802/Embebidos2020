@@ -1,9 +1,9 @@
 .login-header{
-    background: var(--ion-color-primary);
+    background: var(--ion-color-danger-tint);
 }
 .login-header{
     position: relative;
-    background: var(--ion-color-primary);
+    background: var(--ion-color-danger-tint);
     border-radius: 0em;
 }
 .login-header::after {
@@ -14,7 +14,7 @@
     width: 0;
     height: 0;
     border: 20px solid transparent;
-    border-top-color: var(--ion-color-primary);
+    border-top-color: var(--ion-color-danger-tint);
     border-bottom: 0;
     margin-left: -15px;
     margin-bottom: -15px;
