@@ -19,20 +19,20 @@
     
       <div linespace></div>
       <ion-item transparent>
-        <ion-input [(ngModel)]="Email" placeholder="Nombre de usuario" type="text"></ion-input>
+        <ion-input [(ngModel)]="username" placeholder="Nombre de usuario" type="text"></ion-input>
       </ion-item>
       <div linespace></div>
       <ion-item transparent>
-        <ion-input [(ngModel)]="Clave" placeholder="Clave" type="clave"></ion-input>
+        <ion-input [(ngModel)]="password" placeholder="Clave" type="password"></ion-input>
       </ion-item>
       <div linespace></div>
       <ion-item transparent>
-        <ion-input [(ngModel)]="confirmar" placeholder="Confirmar clave" type="confirmar clave"></ion-input>
+        <ion-input [(ngModel)]="confirm_password" placeholder="Confirmar clave" type="password"></ion-input>
       </ion-item>
 
       <div linespace></div>
       <ion-button padding color = "danger" class="ion-button-class" shape="round" fill="solid" size="large" expand="block"
-      (click)="processRegister()">Registrarse</ion-button>
+      (click)="prosesRegister()">Registrarse</ion-button>
 
   </div>
 

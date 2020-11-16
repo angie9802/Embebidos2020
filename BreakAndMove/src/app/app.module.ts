@@ -10,12 +10,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IonicStorageModule } from '@ionic/storage';
 
+import { HttpModule } from '@angular/http';
 import { PostProvider } from '../providers/post-provider';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, 
+  imports: [
+    BrowserModule, 
+    HttpModule,
     IonicModule.forRoot(), 
     AppRoutingModule,
     IonicStorageModule.forRoot()
