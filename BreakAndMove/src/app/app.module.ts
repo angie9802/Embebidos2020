@@ -10,7 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IonicStorageModule } from '@ionic/storage';
 
-import { HttpModule } from '@angular/http';
+//import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { PostProvider } from '../providers/post-provider';
 
 @NgModule({
@@ -18,7 +19,8 @@ import { PostProvider } from '../providers/post-provider';
   entryComponents: [],
   imports: [
     BrowserModule, 
-    HttpModule,
+    HttpClientModule,
+    //HttpModule,
     IonicModule.forRoot(), 
     AppRoutingModule,
     IonicStorageModule.forRoot()
