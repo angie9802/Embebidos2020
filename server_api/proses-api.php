@@ -15,13 +15,13 @@ if($psotjson['aski']=='registro'){
     $query =  mysqli_query($mysqli, "INSERT INTO Sedentarismo SET
     Nombre = '$postjson[username]',
     Clave  = '$postjson[password]',
-    status = 'y',
-    Creado_en    = '$today'
+    Estado = 'y',
+    Creado_en  = '$today'
     ");
 
     $idcust = mysqli_insert_id($mysqli);
 
-    if($query) $result = json_encode(array('succes'=>true, 'customerid'=>$idcust));
+    if($query) $result = json_encode(array('succes'=>true));
     else $result = json_encode(array('success'=>false, 'msg'=>'error, porfavor intente de nuevo'));
 
     echo $result;
