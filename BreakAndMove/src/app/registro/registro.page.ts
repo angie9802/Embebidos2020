@@ -53,7 +53,7 @@ export class RegistroPage implements OnInit {
       password : this.password,
       aksi: 'registro'
       };
-      this.postPvdr.postData(body, 'proses-api.php').subcribe(async data => {
+      this.postPvdr.postData(body, 'proses-api.php').subscribe(async data => {
         var alertmsg = data.msg;
         if (data.succes){
           this.router.navigate(['/login']);
